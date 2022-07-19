@@ -7,6 +7,9 @@
 
 import Foundation
 import Combine
+import Collections
+
+typealias TransactionGroup = OrderedDictionary<String, [Transaction]>
 
 final class TransactionListViewModel: ObservableObject {
     // ObservableObject is part of the Combine framework that turns any object into a publisher and will notify its subscribers of its state changes, so they can refresh their views.
@@ -20,7 +23,7 @@ final class TransactionListViewModel: ObservableObject {
     }
     
     func getTransactions() {
-        guard let url = URL(string: "http://designcode.io/data/transaction.json") else {
+        guard let url = URL(string: "https://designcode.io/data/transactions.json") else {
             print("Invalid URL")
             return
         }
@@ -48,5 +51,13 @@ final class TransactionListViewModel: ObservableObject {
                 
             }
             .store(in: &cancellables)
+    }
+    
+    func groupTransactionsByMonth() -> TransactionGroup {
+        guard !transactions.isEmpty else { return [:] }
+        
+        let groupedTransactions = TransactionGroup(grouping: transactions) { $0.month }
+        
+        return groupedTransactions
     }
 }

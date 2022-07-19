@@ -49,6 +49,7 @@ struct TransactionRow: View {
                 .foregroundColor(transaction.type == TransactionType.credit.rawValue ? Color.text : .primary)
         }
         .padding([.top, .bottom], 8)
+        
     }
 }
 
