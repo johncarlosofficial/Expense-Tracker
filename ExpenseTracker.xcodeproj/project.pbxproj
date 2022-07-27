@@ -20,6 +20,7 @@
 		DD9909E3287DD70400BCF85E /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9909E2287DD70400BCF85E /* PreviewData.swift */; };
 		DD9909E5287DD7B500BCF85E /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9909E4287DD7B500BCF85E /* TransactionRow.swift */; };
 		DD9909E8287DDD8F00BCF85E /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = DD9909E7287DDD8F00BCF85E /* SwiftUIFontIcon */; };
+		DDCAD1D42891262200714950 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DDCAD1D32891262200714950 /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCAD1D42891262200714950 /* SwiftUICharts in Frameworks */,
 				DD355DDC2885471C00B273F8 /* Collections in Frameworks */,
 				DD9909E8287DDD8F00BCF85E /* SwiftUIFontIcon in Frameworks */,
 			);
@@ -111,6 +113,7 @@
 			packageProductDependencies = (
 				DD9909E7287DDD8F00BCF85E /* SwiftUIFontIcon */,
 				DD355DDB2885471C00B273F8 /* Collections */,
+				DDCAD1D32891262200714950 /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = DD9909CD287DD13000BCF85E /* ExpenseTracker.app */;
@@ -143,6 +146,7 @@
 			packageReferences = (
 				DD9909E6287DDD8F00BCF85E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				DD355DDA2885471B00B273F8 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				DDCAD1D22891262200714950 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = DD9909CE287DD13000BCF85E /* Products */;
 			projectDirPath = "";
@@ -397,6 +401,14 @@
 				kind = branch;
 			};
 		};
+		DDCAD1D22891262200714950 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -409,6 +421,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DD9909E6287DDD8F00BCF85E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
 			productName = SwiftUIFontIcon;
+		};
+		DDCAD1D32891262200714950 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCAD1D22891262200714950 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
