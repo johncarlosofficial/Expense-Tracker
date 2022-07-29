@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		DD355DD92885424E00B273F8 /* TransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD355DD82885424E00B273F8 /* TransactionList.swift */; };
 		DD355DDC2885471C00B273F8 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = DD355DDB2885471C00B273F8 /* Collections */; };
+		DD5832B828926B7D008BF77E /* TransactionDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5832B728926B7C008BF77E /* TransactionDetailRow.swift */; };
+		DD5832BA28926CC7008BF77E /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5832B928926CC7008BF77E /* TransactionView.swift */; };
+		DD5832BC28927480008BF77E /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5832BB28927480008BF77E /* CategoryRow.swift */; };
+		DD5832BE28927847008BF77E /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5832BD28927847008BF77E /* CategoriesView.swift */; };
 		DD89CAA6287FF60100BEAA32 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89CAA5287FF60100BEAA32 /* TransactionListViewModel.swift */; };
 		DD89CAA8287FFFF000BEAA32 /* RecentTransactionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD89CAA7287FFFF000BEAA32 /* RecentTransactionList.swift */; };
 		DD9909D1287DD13000BCF85E /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD9909D0287DD13000BCF85E /* ExpenseTrackerApp.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		DD355DD82885424E00B273F8 /* TransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionList.swift; sourceTree = "<group>"; };
+		DD5832B728926B7C008BF77E /* TransactionDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailRow.swift; sourceTree = "<group>"; };
+		DD5832B928926CC7008BF77E /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		DD5832BB28927480008BF77E /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		DD5832BD28927847008BF77E /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		DD89CAA5287FF60100BEAA32 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 		DD89CAA7287FFFF000BEAA32 /* RecentTransactionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTransactionList.swift; sourceTree = "<group>"; };
 		DD9909CD287DD13000BCF85E /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +81,10 @@
 			children = (
 				DD9909D0287DD13000BCF85E /* ExpenseTrackerApp.swift */,
 				DD9909D2287DD13000BCF85E /* ContentView.swift */,
+				DD5832B728926B7C008BF77E /* TransactionDetailRow.swift */,
+				DD5832B928926CC7008BF77E /* TransactionView.swift */,
+				DD5832BB28927480008BF77E /* CategoryRow.swift */,
+				DD5832BD28927847008BF77E /* CategoriesView.swift */,
 				DD89CAA7287FFFF000BEAA32 /* RecentTransactionList.swift */,
 				DD9909E4287DD7B500BCF85E /* TransactionRow.swift */,
 				DD9909E0287DD5D100BCF85E /* TransactionModel.swift */,
@@ -178,10 +190,14 @@
 				DD355DD92885424E00B273F8 /* TransactionList.swift in Sources */,
 				DD89CAA8287FFFF000BEAA32 /* RecentTransactionList.swift in Sources */,
 				DD9909E1287DD5D100BCF85E /* TransactionModel.swift in Sources */,
+				DD5832B828926B7D008BF77E /* TransactionDetailRow.swift in Sources */,
+				DD5832BA28926CC7008BF77E /* TransactionView.swift in Sources */,
+				DD5832BE28927847008BF77E /* CategoriesView.swift in Sources */,
 				DD9909D3287DD13000BCF85E /* ContentView.swift in Sources */,
 				DD9909E5287DD7B500BCF85E /* TransactionRow.swift in Sources */,
 				DD9909DF287DD29900BCF85E /* Extensions.swift in Sources */,
 				DD89CAA6287FF60100BEAA32 /* TransactionListViewModel.swift in Sources */,
+				DD5832BC28927480008BF77E /* CategoryRow.swift in Sources */,
 				DD9909D1287DD13000BCF85E /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
